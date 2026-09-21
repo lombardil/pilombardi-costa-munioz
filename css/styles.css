@@ -7,9 +7,7 @@ body, ul, li, a, p, h1, div {
     padding: 0;
 }
 
-ul {
-    list-style-type: none;
-}
+
 
 a {
     text-decoration: none;
@@ -55,20 +53,7 @@ header {
     width: 80px;
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-}
 
-.menu-item {
-    margin: 10px;
-}
-
-.menu-link {
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-}
 
 .mapas, .peliculas {
     display: flex;
