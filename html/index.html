@@ -1,158 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tucine</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>tuperfume</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     
+    <div class="pagina">
     <header>
-        <section class="log">
-            <p> <a class="registrarte" href="./login.html">Login</a> <a class="registrarte" href="./register.html">Registrate</a> </p>
-        </section>
-
-        <div class="logo">
-
-            <a href="./index.html">
+        <div class="header-top">
+            <a href="./index.html" class="logo-link">
                 <img src="../img/logo.png" alt="foto del logo" class="logo-img">
             </a>
 
-        </div>
+            <form class="buscador" action="./serch-result.html" method="get">
+                <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes...">
+                <button class="buscador-boton" type="submit">Buscar</button>
+            </form>
 
-        
-        
+            <nav class="nav-superior">
+                <ul class="menu">
+                    <li class="menu-item"><a class="menu-link" href="./index.html">Home</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./login.html">Login</a></li>
+                    <li class="menu-item"><a class="menu-link" href="./register.html">Registrate</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-<main>
+
+    <div class="contenido">
+        <aside class="nav-categorias">
+            <h2 class="nav-categorias-titulo">Categorías</h2>
+            <nav>
+                <ul class="categorias-lista">
+                    <li class="categoria-item"><a class="categoria-link" href="./categoria.html?cat=florales">Florales</a></li>
+                    <li class="categoria-item"><a class="categoria-link" href="./categoria.html?cat=frutales">Frutales</a></li>
+                    <li class="categoria-item"><a class="categoria-link" href="./categoria.html?cat=vainilla">Vainilla y dulces</a></li>
+                    <li class="categoria-item"><a class="categoria-link" href="./categoria.html?cat=orientales">Orientales y amaderados</a></li>
+                    <li class="categoria-item"><a class="categoria-link" href="./categoria.html?cat=frescos">Frescos y acuáticos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+<section class="principal">
 
         <section class="perfumes de victoria">
             <h2 class="titulo-seccion">Victoria's Secret</h2>
             <article class="perfume">
-                <img src="../img/VS-aquakiss.png" alt="Aqua Kiss" class="perfume-img">
-                <h2>Aqua Kiss - Victoria's Secret</h2>
-                <p>Fragancia fresca y acuática con notas de pera, peonía y almizcle, ideal para el día a día.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-aquakiss.png" alt="Aqua Kiss" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Aqua Kiss - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Fragancia fresca y acuática con notas de pera, peonía y almizcle, ideal para el día a día.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-barevanilla.png" alt="Bare Vanilla" class="perfume-img">
-                <h2>Bare Vanilla - Victoria's Secret</h2>
-                <p>Aroma cálido y dulce de vainilla cremosa con toques de almizcle suave.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-barevanilla.png" alt="Bare Vanilla" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Bare Vanilla - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Aroma cálido y dulce de vainilla cremosa con toques de almizcle suave.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-coconutmilk.png" alt="Coconut Milk" class="perfume-img">
-                <h2>Coconut Milk - Victoria's Secret</h2>
-                <p>Perfume suave y cremoso que combina leche de coco con notas florales.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-coconutmilk.png" alt="Coconut Milk" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Coconut Milk - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Perfume suave y cremoso que combina leche de coco con notas florales.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-coconutpassion.png" alt="Coconut Passion" class="perfume-img">
-                <h2>Coconut Passion - Victoria's Secret</h2>
-                <p>Mezcla tropical de coco y vainilla con un final dulce y envolvente.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-coconutpassion.png" alt="Coconut Passion" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Coconut Passion - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Mezcla tropical de coco y vainilla con un final dulce y envolvente.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-lovespell.png" alt="Love Spell" class="perfume-img">
-                <h2>Love Spell - Victoria's Secret</h2>
-                <p>Fragancia frutal y floral con notas de flor de cerezo y durazno, dulce y juvenil.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-lovespell.png" alt="Love Spell" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Love Spell - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Fragancia frutal y floral con notas de flor de cerezo y durazno, dulce y juvenil.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-pureseduction.png" alt="Pure Seduction" class="perfume-img">
-                <h2>Pure Seduction - Victoria's Secret</h2>
-                <p>Combinación frutal de ciruela roja y fresia, sensual y muy popular.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-pureseduction.png" alt="Pure Seduction" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Pure Seduction - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Combinación frutal de ciruela roja y fresia, sensual y muy popular.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-romantic.png" alt="Romantic" class="perfume-img">
-                <h2>Romantic - Victoria's Secret</h2>
-                <p>Aroma floral y delicado de rosa y peonía, pensado para un aire romántico.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-romantic.png" alt="Romantic" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Romantic - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Aroma floral y delicado de rosa y peonía, pensado para un aire romántico.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-rush.png" alt="Rush" class="perfume-img">
-                <h2>Rush - Victoria's Secret</h2>
-                <p>Fragancia frutal y vibrante de frutas rojas, enérgica y divertida.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-rush.png" alt="Rush" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Rush - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Fragancia frutal y vibrante de frutas rojas, enérgica y divertida.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-temptation.png" alt="Temptation" class="perfume-img">
-                <h2>Temptation - Victoria's Secret</h2>
-                <p>Perfume dulce y sensual con notas de frutas y vainilla, de estela intensa.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-temptation.png" alt="Temptation" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Temptation - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Perfume dulce y sensual con notas de frutas y vainilla, de estela intensa.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/VS-vanillalace.png" alt="Vanilla Lace" class="perfume-img">
-                <h2>Vanilla Lace - Victoria's Secret</h2>
-                <p>Vainilla envolvente con toques florales y de almizcle, suave y elegante.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/VS-vanillalace.png" alt="Vanilla Lace" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Vanilla Lace - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Vainilla envolvente con toques florales y de almizcle, suave y elegante.</p>
             </article>
         </section>
 
-        <section class="perfume de otras marcas">
+        <section class="perfumes de otras marcas">
             <h2 class="titulo-seccion">Otras marcas</h2>
             <article class="perfume">
-                <img src="../img/MK.png" alt="Confidently You" class="perfume-img">
-                <h2>Confidently You - Mary Kay</h2>
-                <p>Fragancia floral y frutal, luminosa y femenina, pensada para transmitir seguridad.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/MK.png" alt="Confidently You" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Confidently You - Mary Kay</a></h2>
+                <p class="perfume-desc">Fragancia floral y frutal, luminosa y femenina, pensada para transmitir seguridad.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/NL.png" alt="Noches Mágicas" class="perfume-img">
-                <h2>Noches Mágicas - Guillermina Valdez</h2>
-                <p>Eau de parfum oriental, dulce y misteriosa, con un frasco rojo de cristal tallado.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/NL.png" alt="Noches Mágicas" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Noches Mágicas - Guillermina Valdez</a></h2>
+                <p class="perfume-desc">Eau de parfum oriental, dulce y misteriosa, con un frasco rojo de cristal tallado.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/blackopium.png" alt="Black Opium" class="perfume-img">
-                <h2>Black Opium - Yves Saint Laurent</h2>
-                <p>Fragancia adictiva de café negro, vainilla y flores blancas, intensa y nocturna.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/blackopium.png" alt="Black Opium" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Black Opium - Yves Saint Laurent</a></h2>
+                <p class="perfume-desc">Fragancia adictiva de café negro, vainilla y flores blancas, intensa y nocturna.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/boss-thescent.png" alt="The Scent" class="perfume-img">
-                <h2>The Scent - Hugo Boss</h2>
-                <p>Perfume masculino seductor con jengibre, cuero y maderas, de carácter cálido.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/boss-thescent.png" alt="The Scent" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">The Scent - Hugo Boss</a></h2>
+                <p class="perfume-desc">Perfume masculino seductor con jengibre, cuero y maderas, de carácter cálido.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/chance.png" alt="Chance" class="perfume-img">
-                <h2>Chance - Chanel</h2>
-                <p>Aroma floral y fresco con cítricos, jacinto y pachulí, vivaz y elegante.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/chance.png" alt="Chance" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Chance - Chanel</a></h2>
+                <p class="perfume-desc">Aroma floral y fresco con cítricos, jacinto y pachulí, vivaz y elegante.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/coco.png" alt="Coco Mademoiselle" class="perfume-img">
-                <h2>Coco Mademoiselle - Chanel</h2>
-                <p>Clásico oriental fresco con naranja, rosa y pachulí, sofisticado e intenso.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/coco.png" alt="Coco Mademoiselle" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Coco Mademoiselle - Chanel</a></h2>
+                <p class="perfume-desc">Clásico oriental fresco con naranja, rosa y pachulí, sofisticado e intenso.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/jadore.png" alt="J'adore" class="perfume-img">
-                <h2>J'adore - Dior</h2>
-                <p>Bouquet floral y luminoso de ylang-ylang, rosa y jazmín, símbolo de feminidad.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/jadore.png" alt="J'adore" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">J'adore - Dior</a></h2>
+                <p class="perfume-desc">Bouquet floral y luminoso de ylang-ylang, rosa y jazmín, símbolo de feminidad.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/previley.png" alt="Privé" class="perfume-img">
-                <h2>Privé - Carolina Herrera</h2>
-                <p>Frasco en forma de mariposa con una fragancia floral y frutal, delicada y moderna.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/previley.png" alt="Privé" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Privé - Carolina Herrera</a></h2>
+                <p class="perfume-desc">Frasco en forma de mariposa con una fragancia floral y frutal, delicada y moderna.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/scandal.png" alt="Scandal" class="perfume-img">
-                <h2>Scandal - Jean Paul Gaultier</h2>
-                <p>Perfume atrevido de miel, gardenia y pachulí, dulce, provocador y adictivo.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/scandal.png" alt="Scandal" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Scandal - Jean Paul Gaultier</a></h2>
+                <p class="perfume-desc">Perfume atrevido de miel, gardenia y pachulí, dulce, provocador y adictivo.</p>
             </article>
 
             <article class="perfume">
-                <img src="../img/si.png" alt="Sì" class="perfume-img">
-                <h2>Sì - Giorgio Armani</h2>
-                <p>Fragancia elegante de grosella negra, rosa y vainilla, sofisticada y con carácter.</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="../img/si.png" alt="Sì" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Sì - Giorgio Armani</a></h2>
+                <p class="perfume-desc">Fragancia elegante de grosella negra, rosa y vainilla, sofisticada y con carácter.</p>
             </article>
         </section>
 
-    </main>
+    </section>
+    </div>
+    </div>
+
     <footer>
         <p class="footer-texto"><a class="footer-link" href="./contacto.html">Contacto</a></p>
         <div class="footer-texto">

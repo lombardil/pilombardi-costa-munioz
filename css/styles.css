@@ -7,117 +7,176 @@ body, ul, li, a, p, h1, div {
     padding: 0;
 }
 
-
-
 a {
     text-decoration: none;
 }
 
 body {
+    background-color: black;
+    font-family: Arial;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    background-color: white;
-    font-family: Arial;
 }
 
 header {
-    background-color: salmon;
-}
-
-.log {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.registrarte {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 30px;
-    background-color: white;
-    color: salmon;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 10px;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
+    background-color: #5a0a0a;
 }
 
 .logo-img {
     width: 80px;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
 
+.logo-link {
+    width: 15%;
+}
 
-.mapas, .peliculas {
+.buscador {
+    display: flex;
+    width: 40%;
+}
+
+.buscador-input {
+    width: 75%;
+    padding: 8px;
+    border: none;
+}
+
+.buscador-boton {
+    width: 25%;
+    padding: 8px;
+    border: none;
+    background-color: #d61f1f;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-superior {
+    width: 30%;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.menu-item {
+    margin-left: 15px;
+}
+
+.menu-link {
+    color: white;
+    font-weight: bold;
+}
+
+.contenido {
+    display: flex;
+}
+
+.nav-categorias {
+    width: 20%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.nav-categorias-titulo {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #d61f1f;
+}
+
+.categorias-lista {
+    list-style-type: none;
+}
+
+.categoria-link {
+    color: white;
+    font-size: 16px;
+}
+
+.categoria-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #333333;
+}
+
+main, .principal {
+    width: 80%;
+    background-color: black;
+    color: white;
+}
+
+.categoria, .resultados {
+    padding: 20px;
+}
+
+.perfumes {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 20px;
 }
 
-.mapa-item {
-    width: 50%;
-    padding: 10px;
-}
-
-.mapa-titulo {
-    margin: 0 0 10px 0;
-}
-
-.mapa {
+.titulo-seccion {
     width: 100%;
-    height: 350px;
+    margin-bottom: 20px;
+    color: salmon;
+    border-bottom: 2px solid salmon;
+    padding-bottom: 8px;
 }
 
-.pelicula {
-    width: 48%;
+.perfume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
     margin: 1%;
-    border: 2px solid salmon;
+    text-align: center;
+    border: 2px solid #d61f1f;
     padding: 15px;
 }
 
-.poster {
-    height: 400px;
+.perfume-foto-link {
+    width: 100%;
+}
+
+.perfume-img {
+    width: 100%;
     background-color: #f2f2f2;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    margin-bottom: 10px;
 }
 
-.spiderman {
-    background-image: url("../img/Spiderman Brand new day.jpg");
+.perfume-nombre {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: white;
 }
 
-.odisea {
-    background-image: url("../img/la odisea.jpg");
+.perfume-link {
+    color: white;
 }
 
-.demonio {
-    background-image: url("../img/la noche del demonio.jpg");
+.perfume-desc {
+    font-size: 14px;
+    color: #cccccc;
 }
 
-.arbol {
-    background-image: url("../img/el-arbol-magico.jpg");
-}
-
-.narciso {
-    background-image: url("../img/yo-narciso.avif");
-}
-
-.resident {
-    background-image: url("../img/recident-evil.jpeg");
+.titulo-pagina {
+    margin-bottom: 20px;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: salmon;
+    background-color: #5a0a0a;
 }
 
 .footer-texto {
@@ -132,12 +191,42 @@ footer {
     font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+    .perfume {
+        width: 31%;
+    }
+}
+
 @media (max-width: 768px) {
-    .mapa-item {
+    .header-top {
+        flex-direction: column;
+    }
+
+    .logo-link, .buscador, .nav-superior {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .nav-categorias, main, .principal {
         width: 100%;
     }
 
-    .pelicula {
+    .perfume {
+        width: 48%;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .perfume {
         width: 98%;
     }
 }
