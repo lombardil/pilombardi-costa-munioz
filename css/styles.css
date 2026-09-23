@@ -47,13 +47,11 @@ header {
 .buscador-input {
     width: 75%;
     padding: 8px;
-    border: none;
 }
 
 .buscador-boton {
     width: 25%;
     padding: 8px;
-    border: none;
     background-color: #d61f1f;
     color: white;
     font-weight: bold;
@@ -70,7 +68,7 @@ header {
 }
 
 .menu-item {
-    margin-left: 15px;
+    margin: 0 0 0 15px;
 }
 
 .menu-link {
@@ -91,7 +89,7 @@ header {
 
 .nav-categorias-titulo {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     color: #d61f1f;
 }
 
@@ -106,16 +104,15 @@ header {
 
 .categoria-item {
     padding: 8px 0;
-    border-bottom: 1px solid #333333;
 }
 
-main, .principal {
+.principal {
     width: 80%;
     background-color: black;
     color: white;
 }
 
-.categoria, .resultados {
+.categoria, .resultados, .registro {
     padding: 20px;
 }
 
@@ -127,10 +124,9 @@ main, .principal {
 
 .titulo-seccion {
     width: 100%;
-    margin-bottom: 20px;
-    color: salmon;
-    border-bottom: 2px solid salmon;
-    padding-bottom: 8px;
+    margin: 0 0 20px 0;
+    color: rgb(252, 93, 75);
+    padding: 0 0 8px 0;
 }
 
 .perfume {
@@ -151,12 +147,12 @@ main, .principal {
 .perfume-img {
     width: 100%;
     background-color: #f2f2f2;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 
 .perfume-nombre {
     font-size: 16px;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
     color: white;
 }
 
@@ -170,7 +166,68 @@ main, .principal {
 }
 
 .titulo-pagina {
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px 0;
+}
+
+.campo-etiqueta {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.campo-input {
+    width: 100%;
+    padding: 8px;
+}
+
+.campo-fila {
+    display: flex;
+    align-items: center;
+    margin: 0 0 8px 0;
+}
+
+.campo-radio-check {
+    margin: 0 8px 0 0;
+}
+
+.campo-boton {
+    width: 100%;
+    padding: 10px;
+    background-color: #d61f1f;
+    color: white;
+    font-weight: bold;
+}
+
+.link-login {
+    color: #d61f1f;
+    font-weight: bold;
 }
 
 footer {
@@ -204,7 +261,7 @@ footer {
 
     .logo-link, .buscador, .nav-superior {
         width: 100%;
-        margin-bottom: 10px;
+        margin: 0 0 10px 0;
     }
 
     .menu {
@@ -215,12 +272,16 @@ footer {
         flex-direction: column;
     }
 
-    .nav-categorias, main, .principal {
+    .nav-categorias, .principal {
         width: 100%;
     }
 
     .perfume {
         width: 48%;
+    }
+
+    .formulario {
+        width: 100%;
     }
 
 }

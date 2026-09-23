@@ -15,7 +15,7 @@
                 <img src="../img/logo.png" alt="foto del logo" class="logo-img">
             </a>
 
-            <form class="buscador" action="./serch-result.html" method="get">
+            <form class="buscador" action="./serch-result.html" method="GET">
                 <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes...">
                 <button class="buscador-boton" type="submit">Buscar</button>
             </form>
@@ -30,8 +30,8 @@
         </div>
     </header>
 
-    <div class="contenido">
-        <aside class="nav-categorias">
+    <section class="contenido">
+        <section class="nav-categorias">
             <h2 class="nav-categorias-titulo">Categorías</h2>
             <nav>
                 <ul class="categorias-lista">
@@ -42,13 +42,43 @@
                     <li class="categoria-item"><a class="categoria-link" href="./categoria.html?cat=frescos">Frescos y acuáticos</a></li>
                 </ul>
             </nav>
-        </aside>
+        </section>
 
 
-    <section class="principal">
+    <section class="principal registro">
+
+        <h1 class="titulo-pagina">Creá tu cuenta</h1>
+
+        <form class="formulario" action="./login.html" method="GET">
+
+            <div class="campo-formulario">
+                <label class="campo-etiqueta" for="email">Email</label>
+                <input class="campo-input" type="email" id="email" name="email" placeholder="tu@email.com">
+            </div>
+
+            <div class="campo-formulario">
+                <label class="campo-etiqueta" for="password">Contraseña</label>
+                <input class="campo-input" type="password" id="password" name="password" placeholder="Elegí una contraseña">
+            </div>
+
+            <div class="campo-formulario">
+                <label class="campo-etiqueta" for="password2">Repetir contraseña</label>
+                <input class="campo-input" type="password" id="password2" name="password2" placeholder="Repetí la contraseña">
+            </div>
+
+            <div class="campo-fila">
+                <input class="campo-radio-check" type="checkbox" id="terminos" name="terminos" value="aceptado">
+                <label class="campo-etiqueta" for="terminos">Acepto términos y condiciones</label>
+            </div>
+
+            <button class="campo-boton" type="submit">Registrarme</button>
+
+            <p><a class="link-login" href="./login.html">Ya tengo una cuenta</a></p>
+
+        </form>
 
     </section>
-    </div>
+    </section>
 
     </div>
 
