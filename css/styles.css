@@ -242,6 +242,59 @@ footer {
     font-weight: bold;
 }
 
+.art-producto {
+    margin: 30px;
+    width: 95%;
+    margin: 1%;
+    border: 2px solid #d61f1f;
+    padding: 15px;
+}
+
+.titulo-producto {
+    color: rgb(248, 248, 248); 
+    text-align: center;  
+}
+
+.producto-desc {
+    color: white;
+}
+
+.comentarios {
+    width: 95%;
+    margin: 1%;
+    border: 2px solid #d61f1f;
+    padding: 15px;
+}
+
+.reviews {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.comentario {
+    color: rgb(247, 247, 247);
+    margin-top: 0px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+.comentario li span {
+    display: block;
+}
+
+.comentario li {
+    margin-bottom: 20px;
+}
+
+.img-producto {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
 @media (max-width: 768px) {
     .header-top {
         flex-direction: column;
