@@ -109,7 +109,15 @@ header {
     color: white;
 }
 
-.categoria, .resultados, .registro {
+.categoria  {
+    padding: 20px;
+}
+
+.resultados {
+    padding: 20px;
+}
+
+.registro {
     padding: 20px;
 }
 
@@ -305,7 +313,17 @@ footer {
         flex-direction: column;
     }
 
-    .logo-link, .buscador, .nav-superior {
+    .logo-link {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .buscador {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .nav-superior {
         width: 100%;
         margin: 0 0 10px 0;
     }
@@ -335,5 +353,20 @@ footer {
 @media (max-width: 420px) {
     .perfume {
         width: 98%;
+    }
+
+    .logo-link {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .buscador {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .nav-superior {
+        width: 100%;
+        margin: 0 0 10px 0;
     }
 }

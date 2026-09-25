@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
@@ -12,11 +12,11 @@
     <header>
         <div class="header-top">
             <a href="./index.html" class="logo-link">
-                <img src="../img/logo.png" alt="foto del logo" class="logo-img">
+                <img src="./img/logo.png" alt="foto del logo" class="logo-img">
             </a>
 
             <form class="buscador" action="./search-result.html" method="GET">
-                <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes...">
+                <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes..." value="">
                 <button class="buscador-boton" type="submit">Buscar</button>
             </form>
 
@@ -30,13 +30,15 @@
         </div>
     </header>
 
-    <main>
-    <section class="contenido">
+<main class="contenido">
+    
 
 
-     <article class="principal login">
+    <section class="principal registro">
 
-        <form class="formulario" action="./index.html" method="GET">
+        <h1 class="titulo-pagina">Creá tu cuenta</h1>
+
+        <form class="formulario" action="./login.html" method="GET">
 
             <div class="campo-formulario">
                 <label class="campo-etiqueta" for="email">Email</label>
@@ -45,22 +47,30 @@
 
             <div class="campo-formulario">
                 <label class="campo-etiqueta" for="password">Contraseña</label>
-                <input class="campo-input" type="password" id="password" name="password" placeholder="Ingresá tu contraseña">
+                <input class="campo-input" type="password" id="password" name="password" placeholder="Elegí una contraseña">
             </div>
 
-            <button class="campo-boton" type="submit">ingresar</button>
+            <div class="campo-formulario">
+                <label class="campo-etiqueta" for="password2">Repetir contraseña</label>
+                <input class="campo-input" type="password" id="password2" name="password2" placeholder="Repetí la contraseña">
+            </div>
 
-            <p><a class="link-login" href="./register.html">No tengo cuenta</a></p>
+            <div class="campo-fila">
+                <input class="campo-radio-check" type="checkbox" id="terminos" name="terminos" value="aceptado">
+                <label class="campo-etiqueta" for="terminos">Acepto términos y condiciones</label>
+            </div>
+
+            <button class="campo-boton" type="submit">Registrarme</button>
+
+            <p><a class="link-login" href="./login.html">Ya tengo una cuenta</a></p>
 
         </form>
 
-      </article>
     </section>
-
    
 
-    </main>
-
+    
+</main>
     <footer>
         <div class="footer-texto">
             Lombardi Lara, Costa Delfina y Luis munioz

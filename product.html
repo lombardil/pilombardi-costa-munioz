@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
@@ -12,11 +12,11 @@
     <header>
         <div class="header-top">
             <a href="./index.html" class="logo-link">
-                <img src="../img/logo.png" alt="foto del logo" class="logo-img">
+                <img src="./img/logo.png" alt="foto del logo" class="logo-img">
             </a>
 
             <form class="buscador" action="./search-result.html" method="GET">
-                <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes...">
+                <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes..." value="">
                 <button class="buscador-boton" type="submit">Buscar</button>
             </form>
 
@@ -29,12 +29,10 @@
             </nav>
         </div>
     </header>
-<main>
+<main class="contenido">
 
-
-
-    <section class="contenido">
-        <section class="nav-categorias">
+   
+        <aside class="nav-categorias">
             <h2 class="nav-categorias-titulo">Categorías</h2>
             <nav>
                 <ul class="categorias-lista">
@@ -64,7 +62,7 @@
                     <li class="categoria-item"><a class="categoria-link" href="./category.html">Womens Watches</a></li>
                 </ul>
             </nav>
-    </section>
+        </aside>
    
   <section>
 
@@ -72,7 +70,7 @@
 
       <h1 class="titulo-producto">Black Opium </h1>
 
-      <img class="img-producto" src="../img/blackopium.png" alt="perfume blackopium">
+      <img class="img-producto" src="./img/blackopium.png" alt="perfume blackopium">
 
       <h3 class="producto-desc">Yves Saint Laurant</h3>
 
@@ -85,22 +83,22 @@
       <ul class="producto-desc">
 
          <li>
-             oriental vainilla
+             <a href="./category.html">vainilla</a>
          </li>
 
          <li>
-             gourmand
+             <a href="./category.html">gourmand</a>
          </li>
          
          <li>
-             cálido especiado
+             <a href="./category.html">cálido especiado</a> 
          </li>
 
       </ul>
 
     </article>
 
-    <article class="comentarios">
+<div class="comentarios">
 
      <h2 class="reviews">Reviews</h2>
      
@@ -129,7 +127,7 @@
      
 
 
-    </article>
+</div>
     
 
   </section>

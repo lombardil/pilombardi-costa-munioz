@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoría</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Resultados de búsqueda</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
@@ -12,11 +12,11 @@
     <header>
         <div class="header-top">
             <a href="./index.html" class="logo-link">
-                <img src="../img/logo.png" alt="foto del logo" class="logo-img">
+                <img src="./img/logo.png" alt="foto del logo" class="logo-img">
             </a>
 
             <form class="buscador" action="./search-result.html" method="GET">
-                <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes...">
+                <input class="buscador-input" type="text" name="q" placeholder="Buscar perfumes..." value="">
                 <button class="buscador-boton" type="submit">Buscar</button>
             </form>
 
@@ -29,9 +29,9 @@
             </nav>
         </div>
     </header>
-<main>
-    <section class="contenido">
-        <article class="nav-categorias">
+<main class="contenido">
+    
+    <aside class="nav-categorias">
             <h2 class="nav-categorias-titulo">Categorías</h2>
             <nav>
                 <ul class="categorias-lista">
@@ -61,65 +61,30 @@
                     <li class="categoria-item"><a class="categoria-link" href="./category.html">Womens Watches</a></li>
                 </ul>
             </nav>
-        </article>
+    </aside>
 
 
-    <section class="principal categoria">
+    <section class="principal resultados">
 
-        <h1 class="titulo-pagina">Categoría</h1>
+        <h1 class="titulo-pagina">Resultados de búsqueda: "chanel oud"</h1>
 
-        <h2 class="perro"> Beauty </h2>
-
-        <section class="perfumes">
-            
+        <section class="resultados-contenido">
             <article class="perfume">
-                <a class="perfume-foto-link" href="./product.html"><img src="../img/mk.png" alt="Confidently You" class="perfume-img"></a>
-                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Confidently You - Mary Kay</a></h2>
-                <p class="perfume-desc">Fragancia floral y frutal, luminosa y femenina, pensada para transmitir seguridad.</p>
-                <p class="perfume-desc">$430.000</p>
+                <a class="perfume-foto-link" href="./product.html"><img src="./img/vs-coconutmilk.png" alt="Coconut Milk" class="perfume-img"></a>
+                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Coconut Milk - Victoria's Secret</a></h2>
+                <p class="perfume-desc">Perfume suave y cremoso que combina leche de coco con notas florales.</p>
+                <p class="perfume-desc">$300.000</p>
                 <p class="perfume-boton-cont"><a class="perfume-boton" href="./product.html">Ver detalle</a></p>
             </article>
 
-            <article class="perfume">
-                <a class="perfume-foto-link" href="./product.html"><img src="../img/nl.png" alt="Noches Mágicas" class="perfume-img"></a>
-                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Noches Mágicas - Guillermina Valdez</a></h2>
-                <p class="perfume-desc">Eau de parfum oriental, dulce y misteriosa, con un frasco rojo de cristal tallado.</p>
-                <p class="perfume-desc">$430.000</p>
-                <p class="perfume-boton-cont"><a class="perfume-boton" href="./product.html">Ver detalle</a></p>
-            </article>
-
-            <article class="perfume">
-                <a class="perfume-foto-link" href="./product.html"><img src="../img/blackopium.png" alt="Black Opium" class="perfume-img"></a>
-                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Black Opium - Yves Saint Laurent</a></h2>
-                <p class="perfume-desc">Fragancia adictiva de café negro, vainilla y flores blancas, intensa y nocturna.</p>
-                <p class="perfume-desc">$430.000</p>
-                <p class="perfume-boton-cont"><a class="perfume-boton" href="./product.html">Ver detalle</a></p>
-            </article>
-
-             <article class="perfume">
-                <a class="perfume-foto-link" href="./product.html"><img src="../img/boss-thescent.png" alt="The Scent" class="perfume-img"></a>
-                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">The Scent - Hugo Boss</a></h2>
-                <p class="perfume-desc">Perfume masculino seductor con jengibre, cuero y maderas, de carácter cálido.</p>
-                <p class="perfume-desc">$430.000</p>
-                <p class="perfume-boton-cont"><a class="perfume-boton" href="./product.html">Ver detalle</a></p>
-            </article>
-
-            <article class="perfume">
-                <a class="perfume-foto-link" href="./product.html"><img src="../img/chance.png" alt="Chance" class="perfume-img"></a>
-                <h2 class="perfume-nombre"><a class="perfume-link" href="./product.html">Chance - Chanel</a></h2>
-                <p class="perfume-desc">Aroma floral y fresco con cítricos, jacinto y pachulí, vivaz y elegante.</p>
-                <p class="perfume-desc">$430.000</p>
-                <p class="perfume-boton-cont"><a class="perfume-boton" href="./product.html">Ver detalle</a></p>
-            </article>
-
-
-
+            <p class="producto-desc">No se encontraron perfumes que coincidan con tu búsqueda.</p>
 
         </section>
 
     </section>
     
 
+    
 </main>
     <footer>
         <div class="footer-texto">
