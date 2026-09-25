@@ -122,7 +122,7 @@ header {
 .titulo-seccion {
     width: 100%;
     margin: 0 0 20px 0;
-    color: solid #d61f1f;
+    color: #d61f1f;
     padding: 0 0 8px 0;
 }
 
@@ -157,6 +157,17 @@ header {
 .perfume-desc {
     font-size: 14px;
     color: #cccccc;
+}
+
+.perfume-boton-cont {
+    margin: 10px 0 0 0;
+}
+
+.perfume-boton {
+    background-color: #d61f1f;
+    color: white;
+    font-weight: bold;
+    padding: 6px 14px;
 }
 
 .titulo-pagina {
@@ -234,12 +245,6 @@ footer {
     color: white;
     font-size: 14px;
     margin: 10px;
-}
-
-.footer-link {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 .art-producto {
