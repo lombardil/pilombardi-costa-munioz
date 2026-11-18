@@ -374,3 +374,8 @@ footer {
         margin: 0 0 10px 0;
     }
 }
+.productos-victoria,
+.productos-otras {
+    display: flex;
+    flex-wrap: wrap;
+}
