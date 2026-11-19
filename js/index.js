@@ -95,3 +95,16 @@ fetch("https://dummyjson.com/products/category/fragrances?limit=10")
     .catch(function(error) {
         console.log(error);
     }); 
+
+    let formularioBusqueda = document.querySelector(".buscador");
+    let inputBusqueda = document.querySelector(".buscador-input");
+    let mensajeBusqueda = document.querySelector(".mensaje-busqueda");
+
+formularioBusqueda.addEventListener("submit", function(evento) {
+    let texto = inputBusqueda.value.trim();
+
+    if (texto.length < 3) {
+        evento.preventDefault();
+        mensajeBusqueda.innerHTML = "La búsqueda debe tener al menos 3 caracteres.";
+    }
+});
