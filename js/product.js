@@ -22,17 +22,16 @@ fetch(`https://dummyjson.com/products/${id}`)
 
             <p class="producto-desc">${data.description}</p>
 
-            <p class="producto-desc">Categoría: ${data.category}</p>
+            <p class="producto-desc">
+             Categoría:
+             <a href="./category.html?cat=${data.category}">${data.category}</a>
+            </p>
 
             <p class="producto-desc">Precio: $${data.price}</p>
 
             <p class="producto-desc">Stock: ${data.stock} unidades</p>
 
             <p class="producto-desc">Tags:</p>
-
-<p class="producto-desc">Tags:</p>
-
-
         `;
 
 contenidoProducto += `<ul class="producto-desc">`;
@@ -98,3 +97,15 @@ fetch("https://dummyjson.com/products/categories")
         console.log(error);
     });
 
+    let formularioBusqueda = document.querySelector(".buscador");
+    let inputBusqueda = document.querySelector(".buscador-input");
+    let mensajeBusqueda = document.querySelector(".mensaje-busqueda");
+
+formularioBusqueda.addEventListener("submit", function(evento) {
+    let texto = inputBusqueda.value.trim();
+
+    if (texto.length < 3) {
+        evento.preventDefault();
+        mensajeBusqueda.innerHTML = "La búsqueda debe tener al menos 3 caracteres.";
+    }
+});

@@ -38,29 +38,31 @@
 
         <h1 class="titulo-pagina">Creá tu cuenta</h1>
 
-        <form class="formulario" action="./login.html" method="GET">
+        <form class="formulario" action="./login.html">
 
             <div class="campo-formulario">
                 <label class="campo-etiqueta" for="email">Email</label>
-                <input class="campo-input" type="email" id="email" name="email" placeholder="tu@email.com">
+                <input class="campo-input" type="email" id="email" placeholder="tu@email.com">
             </div>
 
             <div class="campo-formulario">
                 <label class="campo-etiqueta" for="password">Contraseña</label>
-                <input class="campo-input" type="password" id="password" name="password" placeholder="Elegí una contraseña">
+                <input class="campo-input" type="password" id="password" placeholder="Elegí una contraseña">
             </div>
 
             <div class="campo-formulario">
                 <label class="campo-etiqueta" for="password2">Repetir contraseña</label>
-                <input class="campo-input" type="password" id="password2" name="password2" placeholder="Repetí la contraseña">
+                <input class="campo-input" type="password" id="password2" placeholder="Repetí la contraseña">
             </div>
 
             <div class="campo-fila">
-                <input class="campo-radio-check" type="checkbox" id="terminos" name="terminos" value="aceptado">
+                <input class="campo-radio-check" type="checkbox" id="terminos" value="aceptado">
                 <label class="campo-etiqueta" for="terminos">Acepto términos y condiciones</label>
             </div>
 
             <button class="campo-boton" type="submit">Registrarme</button>
+
+            <p class="mensaje-registro"></p>
 
             <p><a class="link-login" href="./login.html">Ya tengo una cuenta</a></p>
 
@@ -76,5 +78,10 @@
             Lombardi Lara, Costa Delfina y Luis munioz
         </div>
     </footer>
+
+    <script src="./js/register.js"></script>
+    <script src="./js/saludo.js"></script>
+    <script src="./js/logout.js"></script>
+
 </body>
 </html>

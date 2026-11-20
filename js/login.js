@@ -7,11 +7,16 @@ let mensajeLogin = document.querySelector(".mensaje-login");
 formularioLogin.addEventListener("submit", function(evento) {
     evento.preventDefault();
 
-    if (email.value.trim() === "") {
+    if (email.value === "") {
         mensajeLogin.innerHTML = "Tenés que completar el email.";
-    } else if (contrasenia.value.trim() === "") {
+    } else if (contrasenia.value === "") {
         mensajeLogin.innerHTML = "Tenés que completar la contraseña.";
-    } else {
-        mensajeLogin.innerHTML = "Formulario completado correctamente.";
-    }
+    } else if (contrasenia.value.length < 6) {
+    mensajeLogin.innerHTML = "La contraseña debe tener al menos 6 caracteres.";
+
+} else {
+    localStorage.setItem("email", email.value);
+    this.submit();
+}
+
 });

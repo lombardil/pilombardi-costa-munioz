@@ -311,6 +311,13 @@ footer {
     margin: 0 auto;
 }
 
+.productos-victoria,
+.productos-otras {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 @media (max-width: 768px) {
     .header-top {
@@ -374,8 +381,8 @@ footer {
         margin: 0 0 10px 0;
     }
 }
-.productos-victoria,
-.productos-otras {
+
+.resultados-contenido {
     display: flex;
     flex-wrap: wrap;
 }

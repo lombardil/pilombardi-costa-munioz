@@ -1,5 +1,5 @@
 
-fetch("https://dummyjson.com/products/category/beauty?limit=10")
+fetch("https://dummyjson.com/products/category/smartphones?limit=10")
     .then(function(response) {
         return response.json();
     })
@@ -35,7 +35,7 @@ productosVictoria.innerHTML = contenidoVictoria;
         console.log(error);
     });
 
-fetch("https://dummyjson.com/products/category/fragrances?limit=10")
+fetch("https://dummyjson.com/products/category/groceries?limit=10")
     .then(function(response) {
         return response.json();
     })
